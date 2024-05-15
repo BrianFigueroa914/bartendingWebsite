@@ -115,3 +115,8 @@ input[type="range"] {
     z-index: 3;
     position: relative;
 }
+textarea {
+    width: 40%;
+    height: 40%;
+    resize: none !important;
+}

@@ -40,7 +40,7 @@
                                     <a class="nav-link" href="#aboutUs">About</a>
                                     <a class="nav-link" href="#calculatorApp">Alcohol Calculator</a>
                                     <a class="nav-link" href="#FAQ">FAQ</a>
-                                    <a class="nav-link" href="contactUs.html">Contact Us</a>
+                                    <a class="nav-link" href="#contactUs">Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -83,8 +83,40 @@
             
             <!--FAQ-->
             <div class="row" id="FAQ">
-                <div class="col">
+                <div class="col" style="background:beige">
                     <h1>FAQ</h1>
+                </div>
+            </div>
+
+            <div class="row" id="contactUs">
+                <div class="col" style="background:beige">
+                    <h1 class="text-center">Contact Us</h1>
+                    <form action="https://public.herotofu.com/v1/90ecbf50-130a-11ef-a980-5313ae3e05e9" method="post" accept-charset="UTF-8" 
+                          class="form-control border-2 border-info ">
+                        <div>
+                            <label for="name">Full Name</label>
+                            <input name="Name" id="name" type="text" required />
+                        </div>
+                        <div>
+                            <label for="email">Your Email</label>
+                            <input name="Email" id="email" type="email" required  />
+                        </div>
+                        <div>
+                            <label for="date">Date of Event</label>
+                            <input name="Date" id="DOE" type="date"/>
+                        </div>
+                        <div>
+                            <label for="textBox">Messsage:</label>
+                            <br>
+                            <textarea name="contactMsg" id="textBox"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Submit" />
+                            <div style="text-indent:-99999px; white-space:nowrap; overflow:hidden; position:absolute;" aria-hidden="true">
+                                <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
