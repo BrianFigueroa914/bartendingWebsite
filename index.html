@@ -76,79 +76,9 @@
 
             <!--Calculator App--> 
             <div class="row">
-                <div class="col" style="background-image: linear-gradient(#350105,beige)">
-
-                    <section class="row justify-content-center g-0">
-                        <!--Calculator Title-->
-                        <div class="col-md-10">
-                           <h2 class="bg-light-subtle m-0">Event Alcohol Estimator</h2>
-                        </div>
-                        <!--Number of Guests heading-->
-                        <div class="col-md-5 bg-gradient">
-                            <h4 class="text-center">Number of guests</h4>
-                            <!-- <input type="number" id="numGuests"> -->
-                            <div class="range-slider">
-                                <input type="range" name="guestAmt" class="slider" id="slider" min="1" max="300" step="1" value="50"  list="values">
-                                <!-- <datalist id="values">
-                                    <option value="10" label="10"></option>
-                                    <option value="50" label="50"></option>
-                                    <option value="100" label="100"></option>
-                                    <option value="150" label="150"></option>
-                                    <option value="200" label="200"></option>
-                                    <option value="250" label="250"></option>
-                                    <option value="300" label="300"></option>
-                                </datalist> -->
-                                <div class="slider-thumb">
-                                    <div class="tooltip"></div>
-                                </div>
-                                <div class="progress">
-                                    
-                                </div>
-                            </div>                            
-                        </div>
-                        <!--Event duration heading-->
-                        <div class="col-md-5 bg-light-subtle">
-                            <h4 class="text-center">Event Duration(hours)</h4>
-                            <div class="eventUi btn-group text-center m-4">
-                                <button class="btn btn-outline-secondary btn-sm" id="decrement">-</button>
-                                <input type="number"class="w-75 text-center" id="eventHours" min="0" max="16" step="0.5" value="4.0">
-                                <button class="btn btn-outline-secondary btn-sm" id="increment">+</button>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="row justify-content-center g-0">
-                        <!--Holds calulated values-->
-                        <div class="col-md-2 bg-warning">
-                            <h4 class="text-center m-0">You will need:</h4>
-                        </div>
-                        <div class="col-md-2 text-center bg-danger" id="wineBottles">
-                            40
-                            <hr class="w-75 m-4">
-                            <p class="fs-5 ">bottles of wine </p>
-                        </div>
-                        <div class="col-md-2 text-center bg-info" id="beerBottles">
-                            <hr class="w-75 m-4">
-                            <p class="fs-5 ">bottles of beer </p>
-                        </div>
-                        <div class="col-md-2 text-center bg-warning" id="liqBottles">
-                            <hr class="w-75 m-4">
-                            <p class="fs-5 ">bottles of liquor </p>
-                        </div>
-                        <div class="col-md-2 text-center bg-danger" id="champBottles">
-                            <hr class="w-75 m-4">
-                            <p class="fs-5 ">bottles of champagne </p>
-                            <p class="fs-6 fst-italic">*Accounted for toast only</p>
-                        </div>
-                        <div class="col-md-10">
-                            <p class="fs-2 text-center">Let us pick the best drinks for the best price!</p>
-                        </div>
-                    </section>
+                <div class="col" id="calculatorApp" style="background-image: linear-gradient(#350105,beige)">
+                    <div class="calconic-calculator"  data-calculatorid="65e95cb05307fd001ee882f8"></div> 
                 </div>
-
-
-
-                    <div class="calconic-calculator"  data-calculatorid="65e95cb05307fd001ee882f8"></div>
             </div>
             
             <!--FAQ-->
