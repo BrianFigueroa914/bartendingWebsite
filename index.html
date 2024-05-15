@@ -1,0 +1,181 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tipsy Moments</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="assests/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assests/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assests/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="assests/favicon_io/site.webmanifest">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col px-0">
+                    <!--Navbar-->
+                    <nav class="navbar navbar-dark navbar-expand-md">
+                        <div class="container-fluid" id="menuItems">
+                            <!--Navbrand-->
+                            <a class="navbar-brand great-vibes-regular display-1"  href="#">
+                                <img src="/assests/images/tipsy_moments_logo.png" alt="Tipsy moments logo" width= "70" height= "70" class="d-inline-block" id="companyLogo">
+                                Tipsy Moments
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasMd" aria-controls="navbarOffcanvasMd" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <!--Offcanvas-->
+                            <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="navbarOffcanvasMd" data-bs-theme= "dark" aria-labelledby="navbarOffcanvasMdLabel">
+                                <div class="offcanvas-header justify-content-end">
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="navbar-nav nav-underline justify-content-md-end">
+                                    <a class="nav-link active" href="#introImg">Home</a>
+                                    <a class="nav-link" href="#aboutUs">About</a>
+                                    <a class="nav-link" href="#calculatorApp">Alcohol Calculator</a>
+                                    <a class="nav-link" href="#FAQ">FAQ</a>
+                                    <a class="nav-link" href="/contactUs.html">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav> 
+                </div>
+            </div>
+    
+            <!--Intro Img-->
+            <div class="row" id="introImgContainer">
+                <div class="col px-0 bg-black">
+                    <div class="gradient-overlay"></div>
+                    <img src="/assests/images/cocktail-with-lemon-lime-strawberry-decoration-generative-ai.jpg" alt="Three Cocktails image"
+                    class="img-fluid figure-img" id="introImg">
+                    <p class="figure-caption text-bg-info d-inline"><a href="https://www.freepik.com/free-photo/cocktail-with-lemon-lime-strawberry-decoration-generative-ai_41061014.htm#query=bartender%20background&position=29&from_view=keyword&track=ais&uuid=33139acf-df3a-4b69-b223-12314f11f811">Image by vecstock</a> on Freepik</p>
+                </div>
+            </div>
+
+            <!--About-->
+            <div class="row" id="aboutUs">
+                <div class="col" style="background-image: linear-gradient(black,#350105)">
+                    <h3 class="text-center">About Us</h3>
+                    <p class="m-5">Welcome to Tipsy Moments Bartending! We are a mobile bartending service dedicated to bringing sophistication, and unforgettable experiences to your events throughout Southern California. 
+                        Based in the heart of California, our team of seasoned mixologists and hospitality professionals is committed to elevating every gathering, from intimate soirées to grand celebrations.</p>
+                    <p class="m-5">At Tipsy Moments Bartending, we pride ourselves on delivering unparalleled service tailored to your unique vision. Whether you're hosting a chic wedding, a corporate gala, or a laid-back
+                        backyard barbecue, our expert bartenders craft custom cocktails with precision and passion, using only the finest ingredients and innovative techniques.</p>                        
+                    <p class="m-5">With our attention to detail and dedication to excellence, we transform ordinary moments into extraordinary memories, ensuring that every sip is savored and every guest feels welcomed
+                        and well-cared for. From concept to execution, we work closely with you to curate a beverage menu that reflects your style and exceeds your expectations.</p>
+                    <p class="m-5">With Tipsy Moments Bartending, the bar is more than just a place to grab a drink—it's a focal point of your event, where connections are made, conversations flow, and memories are made
+                        to last a lifetime. Trust us to pour your vision into every glass, leaving you free to enjoy the festivities and create cherished moments with your guests. Raise your glass to unforgettable experiences 
+                        with Tipsy Moments Bartending—where the art of mixology meets the spirit of hospitality. Cheers!</p>
+                </div>
+            </div>
+
+            <!--Calculator App--> 
+            <div class="row">
+                <div class="col" style="background-image: linear-gradient(#350105,beige)">
+
+                    <section class="row justify-content-center g-0">
+                        <!--Calculator Title-->
+                        <div class="col-md-10">
+                           <h2 class="bg-light-subtle m-0">Event Alcohol Estimator</h2>
+                        </div>
+                        <!--Number of Guests heading-->
+                        <div class="col-md-5 bg-gradient">
+                            <h4 class="text-center">Number of guests</h4>
+                            <!-- <input type="number" id="numGuests"> -->
+                            <div class="range-slider">
+                                <input type="range" name="guestAmt" class="slider" id="slider" min="1" max="300" step="1" value="50"  list="values">
+                                <!-- <datalist id="values">
+                                    <option value="10" label="10"></option>
+                                    <option value="50" label="50"></option>
+                                    <option value="100" label="100"></option>
+                                    <option value="150" label="150"></option>
+                                    <option value="200" label="200"></option>
+                                    <option value="250" label="250"></option>
+                                    <option value="300" label="300"></option>
+                                </datalist> -->
+                                <div class="slider-thumb">
+                                    <div class="tooltip"></div>
+                                </div>
+                                <div class="progress">
+                                    
+                                </div>
+                            </div>                            
+                        </div>
+                        <!--Event duration heading-->
+                        <div class="col-md-5 bg-light-subtle">
+                            <h4 class="text-center">Event Duration(hours)</h4>
+                            <div class="eventUi btn-group text-center m-4">
+                                <button class="btn btn-outline-secondary btn-sm" id="decrement">-</button>
+                                <input type="number"class="w-75 text-center" id="eventHours" min="0" max="16" step="0.5" value="4.0">
+                                <button class="btn btn-outline-secondary btn-sm" id="increment">+</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="row justify-content-center g-0">
+                        <!--Holds calulated values-->
+                        <div class="col-md-2 bg-warning">
+                            <h4 class="text-center m-0">You will need:</h4>
+                        </div>
+                        <div class="col-md-2 text-center bg-danger" id="wineBottles">
+                            40
+                            <hr class="w-75 m-4">
+                            <p class="fs-5 ">bottles of wine </p>
+                        </div>
+                        <div class="col-md-2 text-center bg-info" id="beerBottles">
+                            <hr class="w-75 m-4">
+                            <p class="fs-5 ">bottles of beer </p>
+                        </div>
+                        <div class="col-md-2 text-center bg-warning" id="liqBottles">
+                            <hr class="w-75 m-4">
+                            <p class="fs-5 ">bottles of liquor </p>
+                        </div>
+                        <div class="col-md-2 text-center bg-danger" id="champBottles">
+                            <hr class="w-75 m-4">
+                            <p class="fs-5 ">bottles of champagne </p>
+                            <p class="fs-6 fst-italic">*Accounted for toast only</p>
+                        </div>
+                        <div class="col-md-10">
+                            <p class="fs-2 text-center">Let us pick the best drinks for the best price!</p>
+                        </div>
+                    </section>
+                </div>
+
+
+
+                    <div class="calconic-calculator"  data-calculatorid="65e95cb05307fd001ee882f8"></div>
+            </div>
+            
+            <!--FAQ-->
+            <div class="row" id="FAQ">
+                <div class="col">
+                    <h1>FAQ</h1>
+                </div>
+            </div>
+        </div>
+                     
+
+            
+
+        
+
+    
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script>
+            (function() { var qs,j,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName,
+            id="calconic_", b="https://cdn.calconic.com/static/js/";
+                if(!gi.call(d,id)) { 
+                    j=ce.call(d,"script"); j.id=id; j.type="text/javascript"; j.async=true;
+                    j.dataset.calconic=true; j.src=b+"calconic.min.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(j,q) 
+                }
+            })();
+        </script>
+    </body>
+</html>
